@@ -5,7 +5,7 @@ Title: CNE Detection and Visualization
 Description: Large-scale identification and advanced visualization 
              of sets of conserved noncoding elements.
 Author: Ge Tan <ge_tan@live.com>
-Maintainer: Ge Tan <ge_tan@live.com>
+Maintainer: Boris Lenhard <b.lenhard@imperial.ac.uk> Damir Baranasic <damir.baranasic@lms.mrc.ac.uk>
 Imports: Biostrings (>= 2.33.4),
          pwalign,
          DBI (>= 0.7),
@@ -44,7 +44,7 @@ LinkingTo: S4Vectors, IRanges, XVector
 VignetteBuilder: knitr
 License: GPL-2 | file LICENSE
 License_restricts_use: yes
-URL: https://github.com/ge11232002/CNEr
+URL: https://github.com/ComputationalRegulatoryGenomicsICL/CNEr
 BugReports: https://github.com/ge11232002/CNEr/issues
 Type: Package
 biocViews: GeneRegulation, Visualization, DataImport
