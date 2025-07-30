@@ -341,7 +341,7 @@ if (count > 1)
     }
 }
 
-void slUniqify(void *pList, int (*compare )(const void *elem1,  const void *elem2), void (*free)())
+void slUniqify(void *pList, int (*compare )(const void *elem1,  const void *elem2), void (*freeFunc)())
 /* Return sorted list with duplicates removed.
  * Compare should be same type of function as slSort's compare (taking
  * pointers to pointers to elements.  Free should take a simple
@@ -356,7 +356,7 @@ while ((el = slPopHead(&oldList)) != NULL)
     {
     if ((newList == NULL) || (compare(&newList, &el) != 0))
         slAddHead(&newList, el);
-    else if (free != NULL)
+    else if (freeFunc != NULL)
         free(el);
     }
 slReverse(&newList);
