@@ -139,8 +139,8 @@ void convertRangeListToArray(struct hashEl *hel)
    * beyond any chromosome size. The presence of this element simplifies going
    * through the array in scanAxt() as it removes the need 
    * for an out-of-bounds check. */
-  arrayEl->start = 3e9;
-  arrayEl->end = 3e9+1;
+  arrayEl->start = 1e9;
+  arrayEl->end = 1e9+1;
 }
 
 void printRangeArray(struct hashEl *hel)
